@@ -14,11 +14,26 @@ Future designs may make use of DHCP to assign an IP Address if push collection a
 
 With multiple sensors, here is an example result of 5 minute data collection from a data collection server and Grafana graphing the results.
 
-## What you need
+![graph](Screenshot_2017-08-01_21-26-30.png)
+
+## Hardware used
 
 - breadboard, wires
 - WeMos D1 mini
 - BME280 with I2C capability
 - power supply such as a micro USB cable and wall charger
 
+## Software used
+
+- Arduino IDE
+- cactus.io BME280 I2C library
+
+Arduino libraries
+- ESP8266 Wifi library
+- ESP8266 Web Server library
+- math library (for round operation)
+- Wire library (for I2C)
+
 ## Circuit Diagram
+
+![Fritzing diagram](wemos_bme280_bb.png)
