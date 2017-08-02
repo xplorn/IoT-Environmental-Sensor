@@ -12,8 +12,8 @@ BME280_I2C bme(0x76); // I2C using address 0x76
 int temperature;
 int humidity;
 int pressure;
-String ssid = "Monitor2";
-String password = "testing123";
+String ssid = "ADD YOUR SSID HERE";
+String password = "YOUR PASSWORD";
 String webString="";     // String to display
 
 ESP8266WebServer server(80);
@@ -24,9 +24,9 @@ void handle_root() {
 }
 
 void setup() {
-  IPAddress ip(192, 168, 9, 209);
-  IPAddress subnet(255, 255, 255, 0);
-  IPAddress gt(192, 168, 9, 1);
+  IPAddress ip(192, 168, 9, 209);            // IP Address
+  IPAddress subnet(255, 255, 255, 0);        // Subnet mask
+  IPAddress gt(192, 168, 9, 1);              // Gateway IP
   
   Serial.begin(115200);
   Serial.println("Begin ESP8266");
